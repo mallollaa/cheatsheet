@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY note </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary navbar-fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class = 'container'>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQMAAADCCAMAAAB6zFdcAAAA51BMVEX/////6zv7wC3/6Tr/7Tz7vSz8/Pz93zb7yS77viz91jT8zjH5+fn7wS319fX+5zru7u7/7DH/6yj/6zPo6On47dD7vRP7viPt44Xf4Of7uwDt7OHr7PLk5Of7wCb19vz51YP46L/51Hz5+O/6xkT5y1v279f2+//76kj46Vnl5d/n5crn6PDm48L76kb46VDz5nHk4Lfx5Xv49OD5zmb45LP50HD44KX525b6yEz6zGD42o7336L41YD6wzn28LP37pr37qbz777z8Mr26Wnn5tjs57Hx5oLr5KPr45Tx5nXh3r3m4a9eJVYyAAAI5ElEQVR4nO2dC3MitxKFza6jGycDYSQMHuIBY7zmaYNfZB833myC3/7/v+e2NDOAiX0zWtRSi3DKVVtlb9VaH6dPt2Y0s1tbG2200UYbbeRIjMkv+WemhW+uv9SC1bJ3l9Se/cj174gqWF+nE1wcfPlQLBarSypeF4++HOwGrMPWE0Ti+KDVOpzUQI13r6ohf3Z5eNVqs/XjAJ8/O54cwaddq72+/EUQ0hSTVtBZGwjqA21fHR5V/3H1i6oBhquLtXCDTIB266iuByDDUL/+rd3xnIIC8LFRfaP8c6haPbhqe1wUQCAAAN/hgJduqB4GfppBFrJMwdUApBiuL6FlekdBVsHn+ooWmKtRP7rwrCLkFDgpGiOgKNQuW4E/FKQHLs15YEah/skXL0gCHxvGCSgK1QMvKACC46KRJHxNtWqLPAQgcHGJRkCq+mmXNgVA0LpGKYO5GvUrwtkok2BSxyUgVf1wQXZYYJ1d893gNYEVaNYDY8Hk+/cFmqp9bhOEAPvjCWoYLkH4cNwhBgGiYBdnJnhLjSqxegAEv1k0QaL6F0oQAMF/rSOA/vA7HQiQhr9brYMZhAmVZIQ0/ODABVI1uaN2vf4t5QJXCOTVFQpOkC5wUgiJGtfue6RTF0i5d4JjF0g1jtw6wbkLpNw6wdFc8DcIh+7mBInAcSEkcjcsAYIrAi6Qqroam1nn+Mj14jMVW05ykQXtt44R2Fex7qI5MFb6QiIMEtVcbB1Y56OFS4f5VZ3YNoK8i0CmEBJZv/MA8+E1MQbvGseWGXQOiLTFuWqfg8AeBHk3iVQYJLJaDVAJRdcLfk21Y3tGYJ1DQm1xrsYna0Zgwa/VH0iqumvpViRjTfGeqHjbTjWw5ldeIKrwj6YNBixoCtdLfVv8VwtGgEr4I3S90rclHkv4EGC7SBgBGGEXnQFxG4ARxk3s1sCCkutV/oPQWwN5G1gwAqQB4aaQiCNPzKz5jexskEmco84IMBtMyfug0G1iGoEFf5K3ARTDN0QjgA1G9G0AEBDnJNgwemADYPAXGgNGebe0KNg5YUGAUuj5UAqFwjYiA/rDQSJ+jJWKrHnnCQPRQ5oVYavQdb24vBJIlxFY8y8vElGKf8UpBl+6gpTA6QzQFcaexAEwGCExKJ+6Xlp+oQQC82VITMRPEDoDDIn+lAJSMUBn3Ha9MB1hFAML9j0qBSiGCwQGWtPBtnlpMgjNTwiMlXQun/xoXpoQwm/GAwGmA43NwnuE4wmaDMQUg8GjUwZFPQSwbdo3z6Cs8UEQYIAQitAWNO6t0GBQMjwlsZJ3DG4MM4Ap8c4zBqJnOBQ3DHRbIzDYcc/AdHPUvcm2Y/zI2Y4ug0K3bJrBvtam8T/mpb1jM300CRho/fvu9wuSQckpAwraMEBgUPKTgUEIzFMGJkPRVwYbH2wYbBgUNgykNgw2DKQM90b9GSnnszc4q09knEGwr7Vp+bGYS+9+Rrx/h7Bf0DqHk/Mayo7unRMdCfMMtM5j5byWtoPoAzE1fINB81pabgaIPsBgcK7z7AYFBqZvNLGgNPCMQXhr/HpiaegZA35j+PQ6MNC6qLqODGBIGp5rQMjbG/H6gugNEe436jQG970RItE4g2D/TOMcyvtf8glvWA6/YZw/0Dqt7PwMW3iPwKDk2bk045Ho3+5Z4DDw65yq8UhUgXBC/EnnRSHEgQqEikeBwAeGJ2XFAKYkj4phNMR4zhMC4dYbI4g9hDhIAsEbBhAHZi8iZQxKFW9CESUOku6os21yKblZQHm4D4qh70kx8BOUUkiuo+R93tn22aMliRilFJJi2MvJ4OeV9NOKEMQUqRRUMdzkLIbizirSPo+5JH5Wxnp/nuwM3VxGWO2s7uoM+mgvwmC5xyS3DMIHtFJQxRCPPGDQR0rEhEFp/yHPnOSUgRij7BUyBmCEQZ5icMqA36LsFWYQgnzt0SUDMcW0gUrFcp84Az5ATEQFAWbFPPcZVhoPfliFgegNERNRMQAj5EmEn1aS/rMKcyGngYIAiZDjDYrO9gtiHKPNiDMGMhEI7x7R00BBACPck4Ug9rDTQDGQRiB7PYkPyhbeLax2TlSrQV47sfGycTksDom+TXMEgWjlhetgBKKxaMsGygil+JkghPABvy/OIIARCFaD6MZWAnEOYUDvpVnPtiohgzCkduONw2iAPSW/YABDwlDnZQD4Er3IYiUoCLI35Lu+aknbg4pdBKo3VPJcSbAlPhha6wkLEMqEIkGFgV0bbKWRQGXzFN65QKCqoRxNSUCAyUCGgYP/yVNCiPcINAcxjisWdsyvMpC5eBM6D0bBT2Krk8EShHLlxvnrx7sn+5Z2i69CkNXg2gn8xEkeLkBw7oTTgVsEBJzg2gUZBIdOSF3glkHqhIITCCJ1gWMEqROiBwfDUvgY2bxq8v+kIMT2J0Y+6ldIuEBKdodypPO4kxEE9xEdBFk53J5aDAVReEgQuF77TGoDFUcja1YIt/s00nBBCkKlbysZ+Xk/poYggxD3uxb2kSK8iSlFwUwKQjnuPwrsVOBTogi2MitEg1NUK4T8iVQ/WFJmhQc8Kwh+R9cEiVIrxGOOQ4H3+pRNkCixQiV6xmiT/PQehmOFgDIDNTTKgoiehGEvhOFzpExA2wVKTFGANvncM+gF8IAqA+J1MJMsCEkhOiuY8YLg4W0EUUg9CRbFMgr9wWNh5SYhxPSpnxDwB4FUGo5xFO+N+AoDg+Dd875vHsiUegF6RPT8MPq+mhD8dO82jippDnjHIKGQmiG6mUJNa3EQIefTpyiaFYF/AJQSCmlNDO7HXZ4vHITghfHDU5wA8JmAkqQgzaDcEEWPj2EIhngThYCPPwzHj/0ocYC0gH858DexmRvKlYpc2tnz+V1PbMPQ81Lb26J7d35/Nl9/AsB7AkoscUOCoRIrR0TR3d4L3fWTb8dxZe0AJGIZBwlCoahES4K1V9QPS9n61wlAIjbnkJJQNNRXKvWjdP3rByAVYxkJpdJM2XfSv+D690QXmyt48ce/Y/lL+veufKONSOt/8QJonOyw5nUAAAAASUVORK5CYII=" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <h5 class="titel">MY notes</h5>
+            </div>
+          </a>
+        </div>
+      </nav>
+<div class="box">
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">{{notes.titel}}</div>
+        <h5 class="card-title">{{note.created_day}}</h5>
+        <div class="card-body text-primary">
+          <p class="card-text">{{Note.summary}}</p>
+        </div>
+    <div class="card border-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+        <div class="card border-info mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    </div></div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
